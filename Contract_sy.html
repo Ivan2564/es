@@ -8,7 +8,7 @@
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black" />
     <meta name="format-detection" content="telephone=no" />
-    <title>合约收益</title>
+    <title>合約收益</title>
     <link href="Css/mobilemain.css" rel="stylesheet" />
     <script src="JS/jquery.js"></script>
     <script src="JS/web3.min.js"></script>
@@ -25,39 +25,39 @@
                             <img src="Images/jt_left.png" height="20px" /></a></span>合约收益
                     </div>
                     <div class="contract_sy_etcbox">
-                        <div class="title2">累计收益</div>
+                        <div class="title2">累計收益</div>
                         <div class="title1">
                             <span id="LJSY"></span>
                             <font>ETH</font></div>
                     </div>
                     <div class="none_etcboxleft">
-                        <div class="title2">可领取</div>
+                        <div class="title2">可領取</div>
                         <div class="title1">
                             <span id="Kl"></span>
                             <font>ETH</font></div>
                     </div>
                     <div class="none_etcboxright">
-                        <div class="title2">待领取</div>
+                        <div class="title2">待領取</div>
                         <div class="title1">
                             <span id="dlq"></span>
                             <font>ETH</font></div>
                     </div>
                     <div class="clear"></div>
                      <div class="none_etcboxleft">
-                        <div class="title2">累计投资</div>
+                        <div class="title2">累計投資</div>
                         <div class="title1">
                              <span id="LJTZ"></span>
                             <font>ETH</font></div>
                     </div>
                     <div class="none_etcboxright" >
-                        <div class="title2">累计回本</div>
+                        <div class="title2">累計回本</div>
                         <div class="title1">
                             <span id="ljhb"></span>
                             <font>ETH</font></div>
                     </div>
                     <div class="clear"></div>
                 </div>
-                    <div class="sy_list" style="display:none;">收益记录</div>
+                    <div class="sy_list" style="display:none;">收益記錄</div>
                     </div>
                  
                 <div class="contract_sy_list">
@@ -160,16 +160,16 @@
             if (typeof web3 !== 'undefined') {
                 web3 = new Web3(web3.currentProvider);
                 if (web3.currentProvider.isMetaMask == true) {
-                    $("#env").html("网页MetaMask使用中...");
+                    $("#env").html("網頁MetaMask使用中...");
                 } else {
-                    $("#env").html("未使用网页MetaMask... ");
+                    $("#env").html("未使用網頁MetaMask... ");
                 }
             } else {
-                $("#env").html("未提供WEB3通道，请检查您的设置...");
+                $("#env").html("未提供WEB3通道，請檢查您的設置...");
             }
             web3.eth.getAccounts(function (err, accounts) {
                 if (accounts.length == 0) {
-                    $("#account").html("请解锁！");
+                    $("#account").html("請解鎖！");
                 } else {
                     var address = accounts[0];
                     $("#address").val(accounts[0]);

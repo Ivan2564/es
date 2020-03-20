@@ -6,7 +6,7 @@
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black" />
     <meta name="format-detection" content="telephone=no" />
-    <title>节点奖励</title>
+    <title>節點獎勵</title>
     <link href="Css/mobilemain.css" rel="stylesheet" />
      <script src="JS/jquery.js"></script>
     <script src="JS/web3.min.js"></script>
@@ -21,22 +21,22 @@
                 <div class="ES_nodebg">
                     <div class="none_name">
                         <span><a href="index.html">
-                            <img src="Images/jt_left.png" height="20px" /></a></span>节点奖励
-                        <a href="SQAndLY.html" style="position: absolute;right: 0;color: #eee;">社区申请及留言</a>
+                            <img src="Images/jt_left.png" height="20px" /></a></span>節點獎勵
+                        <a href="SQAndLY.html" style="position: absolute;right: 0;color: #eee;">社區申請及留言</a>
                     </div>
                     <div class="none_etcbox">
                         <div class="title1">
                             <span id="yj"></span>
                             <font>ETH</font></div>
-                        <div class="title2">我的节点业绩ETH</div>
+                        <div class="title2">我的節點業績ETH</div>
                     </div>
                     <div class="none_etcboxleft" style="display:none;">
                         <div class="title1">235653565.5<font>EHT</font></div>
-                        <div class="title2">社区节点收益</div>
+                        <div class="title2">社區節點收益</div>
                     </div>
                     <div class="none_etcboxright" style="display:none;">
                         <div class="title1">235653565.5<font>ESCH</font></div>
-                        <div class="title2">社区节点收益</div>
+                        <div class="title2">社區節點收益</div>
                     </div>
                     <div class="clear"></div>
                 </div>
@@ -47,9 +47,9 @@
                 <div >
                     <table class="reward_list">
                         <tr>
-                            <td class="table_name_eth">可领奖励</td>
-                            <td class="table_name_eth">已领取</td>
-                            <td class="table_name_eth">未领取</td>
+                            <td class="table_name_eth">可領獎勵</td>
+                            <td class="table_name_eth">已領取</td>
+                            <td class="table_name_eth">未領取</td>
                         </tr>
                         
 
@@ -149,16 +149,16 @@
             if (typeof web3 !== 'undefined') {
                 web3 = new Web3(web3.currentProvider);
                 if (web3.currentProvider.isMetaMask == true) {
-                    $("#env").html("网页MetaMask使用中...");
+                    $("#env").html("網頁MetaMask使用中...");
                 } else {
-                    $("#env").html("未使用网页MetaMask... ");
+                    $("#env").html("未使用網頁MetaMask... ");
                 }
             } else {
-                $("#env").html("未提供WEB3通道，请检查您的设置...");
+                $("#env").html("未提供WEB3通道，請檢查您的設置...");
             }
             web3.eth.getAccounts(function (err, accounts) {
                 if (accounts.length == 0) {
-                    $("#account").html("请解锁！");
+                    $("#account").html("請解鎖！");
                 } else {
                     $("#address").val(accounts[0]);
                     var address = accounts[0];

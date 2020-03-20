@@ -6,7 +6,7 @@
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black" />
     <meta name="format-detection" content="telephone=no" />
-    <title>购买ESCH</title>
+    <title>購買ESCH</title>
      <link href="Css/mobilemain.css" rel="stylesheet" />
     <script src="JS/jquery.js"></script>
     <script src="JS/web3.js"></script>
@@ -17,10 +17,10 @@
             <div class="main">
                 <div class="staus_name">
                     <span><a href="index.html">
-                        <img src="Images/jt_left.png" height="20px" /></a></span>购买ESCH
+                        <img src="Images/jt_left.png" height="20px" /></a></span>購買ESCH
                 </div>
                 <div class="es_hybox">
-    <div class="ES_hytitle1">0.1ETH起购，兑换比例1：1000</div>
+    <div class="ES_hytitle1">0.1ETH起購，兑换比例1：1000</div>
         
             </div>
                 <div class="es_hybox1">
@@ -28,12 +28,12 @@
                                 <span class="title" id="account"> </span>
                             </div>
         
-         <div class="ES_hytitle3"><label>请输入数量：</label>
+         <div class="ES_hytitle3"><label>請輸入数量：</label>
         <input type="text" id="jeAccount" placeholder="ETH" value="" class="botton_acc"></div>
         
         </div>
                 <div class="ES_hytitle3">
-                    <label>燃料单价(GWei)</label>
+                    <label>燃料單價(GWei)</label>
                     <select id="gasPrice" class="botton_acc1">
                         <option value="6">6</option>
                         <option value="15">15</option>
@@ -53,7 +53,7 @@ $(function(){
 
         web3.eth.getAccounts(function (err, accounts) {
             if (accounts.length == 0) {
-                $("#account").html("请解锁！");
+                $("#account").html("請解鎖！");
             } else {
                 $("#account").html(accounts[0]);
                 login(accounts[0]);
@@ -88,10 +88,10 @@ $(function(){
             function (err, res) {
                 var output = "";
                 if (!err) {
-                    $("#info").html("发送成功！等待区块确认... ");
+                    $("#info").html("發送成功！等待區塊確認... ");
 
                 } else {
-                    $("#info").html("请检查... ");
+                    $("#info").html("請檢查... ");
                 }
 
             });
